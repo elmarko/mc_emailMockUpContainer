@@ -1,0 +1,150 @@
+#mc_emailTemplateCnt{
+	height: auto;
+	display: block; 
+	clear: both;
+	margin-top: 1rem;
+	}
+#mc_emailTemplateCnt .ControlBar{
+	background: #e7e5e7;
+	border-radius: 10px 10px 0 0;
+	height: 40px;
+	width: 100%;
+	position: relative;
+	/*display: flex;
+	flex-direction: row;
+	align-content: center;*/
+	}
+#mc_emailTemplateCnt .ControlBar #dots{
+	width: 14px;
+	height: 14px;
+	background: #fdbc40;
+	border: 1px #dea034 solid;
+	border-radius: 50%;
+	top: 13px;
+	left: 40px;
+	position: relative;
+	box-sizing: border-box;
+	}
+#mc_emailTemplateCnt .ControlBar #dots:before,#mc_emailTemplateCnt .ControlBar #dots:after{
+	width: 14px;
+	height: 14px;
+	background: #fc605c;
+	border: 1px #df4845 solid;
+	margin-left: -25px;
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+	box-sizing: border-box;
+	top: -1px;
+	}
+#mc_emailTemplateCnt .ControlBar #dots:after{
+	background: #34c749;
+	margin-left: 25px;
+	border: 1px #28ab35 solid;
+	box-sizing: border-box;
+	}
+#mc_emailTemplateCnt .ControlBar #title{
+	text-align: center;
+	font-family: arial;
+	font-size: 13px;
+	color: #555;
+}
+
+#mc_emailTemplateCnt .ControlBar #sendBtn{
+	width: 45px;
+	height: 25px;
+	background: linear-gradient(#ddd, #bbb);
+	position: absolute;
+	right: 20px;
+	top: 7px;
+	border-radius: 3px;
+	border: 1px solid #fff;
+}
+
+#mc_emailTemplateCnt .fakeDetails{
+	font-family: arial;
+	border: 1px solid #efefef;
+	font-size: 13px;
+	border-bottom: 0;
+}
+
+#mc_emailTemplateCnt .fakeDetails .toField, #mc_emailTemplateCnt .fakeDetails .subjectField{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #efefef;
+	color: #444;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+
+#mc_emailTemplateCnt .fakeDetails .eleTitle{
+	color: #aaa;
+	}
+ #mc_emailTemplateCnt .fakeDetails .subjectField{
+ 	border-bottom: 0;
+ }
+#mc_emailTemplateCnt .fakeDetails .eleTitle{
+	width: 60px;
+	display: inline-block;
+	
+}
+#mc_emailTemplateCnt .fakeDetails .toField .recipients{
+	border-radius: 3px;
+	background: #088ee8;
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 12px;
+}
+
+#mc_emailTemplateCnt .content{
+	box-sizing: border-box;
+	padding: 0 10px;
+	line-height: 1.4;
+	border: 1px solid #efefef;
+	font-family: helvetica, arial;
+	border-radius: 0 0 4px 4px;
+	overflow: auto;
+	background: #fdfdfd;
+}
+
+@media screen and (min-width: 768px){
+	#mc_emailTemplateCnt .fakeDetails .toField, #mc_emailTemplateCnt .fakeDetails .subjectField{
+		padding: 0 20px;
+	}
+	
+	#mc_emailTemplateCnt .content{
+		padding: 0 20px;
+		}
+}
+
+@media screen and (min-width: 990px){
+	#mc_emailTemplateCnt .fakeDetails .toField, #mc_emailTemplateCnt .fakeDetails .subjectField{
+		padding: 0 30px;
+	}
+	
+	#mc_emailTemplateCnt .content{
+		padding: 0 30px;
+		}
+}
+
+@media screen and (min-width: 1200px){
+	#mc_emailTemplateCnt .ControlBar #sendBtn svg{
+		top: -4px;
+		position: relative;
+	}
+}
+
+
+#mc_emailTemplateCnt .content p{
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	padding: 0;
+	font-weight: 400;
+	font-size: .8rem;
+	line-height: 1.6;
+	margin-bottom: .9rem;
+}
+#mc_emailTemplateCnt .content p:first-of-type{
+	margin-top: 0;
+	}
